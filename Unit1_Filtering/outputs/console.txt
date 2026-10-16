@@ -1,0 +1,26 @@
+Max |custom - OpenCV| difference (interior pixels):
+  Mean    : 0
+  Median  : 0
+  Gaussian: 1 (rounding)
+
+Original sharpness (Laplacian var): 1133.2
+
+Noise                 Filter          PSNR(dB)    SSIM  Sharpness
+-----------------------------------------------------------------
+Salt & Pepper (5%)    (none)             17.77   0.358    22454.1
+                      Mean 3x3           24.88   0.507      497.3
+                      Median 3x3         30.11   0.864      354.6
+                      Gaussian 3x3       24.94   0.520      404.0
+-----------------------------------------------------------------
+Gaussian (sigma=20)   (none)             22.41   0.367     8612.5
+                      Mean 3x3           27.39   0.641      226.3
+                      Median 3x3         26.94   0.575      655.4
+                      Gaussian 3x3       27.94   0.653      197.3
+-----------------------------------------------------------------
+
+Blurring vs kernel size (clean image) - Sharpness:
+  k=3:  Mean=   79.9  Median=  319.9  Gaussian=   88.9
+  k=5:  Mean=   22.9  Median=  194.0  Gaussian=   23.9
+  k=7:  Mean=    9.5  Median=  138.3  Gaussian=    9.4
+
+All figures saved in /home/sre/Desktop/Computer Vision Assignment/Unit1_Filtering/outputs

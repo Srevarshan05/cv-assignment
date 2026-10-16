@@ -1,0 +1,15 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# YOLO weights (downloaded automatically on first run)
+*.pt
+
+# Large generated video (re-create it by running Unit 5)
+Unit5_Object_Recognition/outputs/output_detections.mp4
+
+# Editor
+.vscode/
+.idea/

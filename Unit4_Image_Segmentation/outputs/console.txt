@@ -1,0 +1,12 @@
+Image size                   : 504 x 624
+Global Otsu threshold        : 141  (cv2 THRESH_OTSU = 141)
+Adaptive Otsu window         : disk radius 45px, local T range 0-254
+
+Ground-truth coins                    : 24
+Regions after global Otsu             : 1
+Regions after adaptive Otsu           : 1   (touching coins still merged)
+Seed markers from distance transform  : 24
+Objects after Watershed               : 24
+Coin area (px): min=6565  max=7396  mean=6972  std=189
+
+All figures saved in /home/sre/Desktop/Computer Vision Assignment/Unit4_Image_Segmentation/outputs

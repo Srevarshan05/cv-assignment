@@ -1,0 +1,20 @@
+Model  : yolo11n.pt (COCO, 80 classes) on NVIDIA GeForce RTX 4050 Laptop GPU
+Source : input_video.webm | 854x480 @ 30 fps | frames: 940
+
+Frames processed        : 917
+Model inference+tracking: 6.8 ms/frame (146 FPS)
+End-to-end speed        : 87 FPS (read + detect + draw + save)
+Confidence threshold    : 0.35
+
+Class        Detections  Track IDs  Mean conf  Max conf  >=0.5
+--------------------------------------------------------------
+person             4308        109      0.536     0.845   2179
+car                3825        138      0.652     0.943   2665
+traffic light       1350         22      0.577     0.802    883
+handbag             656          4      0.486     0.661    303
+backpack              1          1      0.391     0.391      0
+umbrella              1          1      0.364     0.364      0
+
+First frame of each class: {'person': 0, 'traffic light': 0, 'car': 0, 'handbag': 0, 'backpack': 254, 'umbrella': 353}
+Screenshots saved (frames): [222, 386, 514, 710]
+Annotated video saved   : outputs/output_detections.mp4
